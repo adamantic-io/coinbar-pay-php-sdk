@@ -1,0 +1,8 @@
+.phpunit.result.cache
+app/vendor/
+
+doc/.~lock*
+doc/~*
+
+.env
+composer.phar
