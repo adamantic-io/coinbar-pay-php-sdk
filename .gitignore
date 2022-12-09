@@ -1,5 +1,5 @@
 .phpunit.result.cache
-app/vendor/
+/vendor/
 
 doc/.~lock*
 doc/~*
