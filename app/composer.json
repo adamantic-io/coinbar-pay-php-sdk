@@ -1,5 +1,5 @@
 {
-    "name": "adamantic/coinbar-pay-php-sdk",
+    "name": "coinbar/coinbar-pay-php-sdk",
     "description": "PHP SDK for the Coinbar Pay crypto payment gateway",
     "type": "library",
     "autoload": {
