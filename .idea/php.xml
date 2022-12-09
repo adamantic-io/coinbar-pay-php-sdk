@@ -38,6 +38,7 @@
       <path value="$PROJECT_DIR$/app/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/app/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/app/vendor/adamantic/crypto-payments-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">

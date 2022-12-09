@@ -38,6 +38,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/cli-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/adamantic/crypto-payments-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
