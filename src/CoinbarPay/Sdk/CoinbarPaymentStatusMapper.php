@@ -13,19 +13,19 @@ abstract class CoinbarPaymentStatusMapper
 {
 
     private static array $CB_TO_SDK = [
-        "Created"  => PaymentStatus::REQUESTED,
-        "Pending"  => PaymentStatus::AUTHORIZED,
-        "Success"  => PaymentStatus::COMPLETED,
-        "Failed"   => PaymentStatus::REFUSED,
-        "Canceled" => PaymentStatus::REVOKED,
+        "CREATED"  => PaymentStatus::REQUESTED,
+        "PENDING"  => PaymentStatus::AUTHORIZED,
+        "SUCCESS"  => PaymentStatus::COMPLETED,
+        "FAILED"   => PaymentStatus::REFUSED,
+        "CANCELED" => PaymentStatus::REVOKED,
     ];
 
     private static array $SDK_TO_CB = [
-        PaymentStatus::REQUESTED  => "Created",
-        PaymentStatus::AUTHORIZED => "Pending",
-        PaymentStatus::COMPLETED  => "Success",
-        PaymentStatus::REFUSED    => "Failed",
-        PaymentStatus::REVOKED    => "Canceled"
+        PaymentStatus::REQUESTED  => "CREATED",
+        PaymentStatus::AUTHORIZED => "PENDING",
+        PaymentStatus::COMPLETED  => "SUCCESS",
+        PaymentStatus::REFUSED    => "FAILED",
+        PaymentStatus::REVOKED    => "CANCELED"
     ];
 
 
@@ -34,6 +34,7 @@ abstract class CoinbarPaymentStatusMapper
      * @throws UnknownStatusException if the provided status is not known to the system
      */
     public static function coinbarToSdk(string $cbStatus): string {
+        $cbStatus = strtoupper($cbStatus);
         if (!isset(self::$CB_TO_SDK[$cbStatus])) {
             throw new UnknownStatusException($cbStatus);
         }
@@ -45,6 +46,7 @@ abstract class CoinbarPaymentStatusMapper
      * @throws UnknownStatusException if the provided status is not known to the system
      */
     public static function sdkToCoinbar(string $sdkStatus): string {
+        $sdkStatus = strtoupper($sdkStatus);
         if (!isset(self::$SDK_TO_CB[$sdkStatus])) {
             throw new UnknownStatusException($sdkStatus);
         }
