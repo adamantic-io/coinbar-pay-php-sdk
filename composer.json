@@ -1,5 +1,6 @@
 {
     "name": "coinbar/coinbar-pay-php-sdk",
+    "version": "1.0.0",
     "description": "PHP SDK for the Coinbar Pay crypto payment gateway",
     "type": "library",
     "autoload": {
