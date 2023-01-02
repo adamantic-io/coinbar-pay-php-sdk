@@ -20,7 +20,7 @@
         "ext-openssl": "*",
         "brick/math": "^0.10.2",
         "vlucas/phpdotenv": "^5.5",
-        "adamantic/crypto-payments-php": "dev-main"
+        "adamantic/crypto-payments-php": ">=0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
